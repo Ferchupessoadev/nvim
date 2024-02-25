@@ -2,4 +2,4 @@
 
 
 # screenshot
-[config de nvim]('./img/img1.png')
+![config de nvim](./img/img1.png)

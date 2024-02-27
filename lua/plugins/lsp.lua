@@ -5,6 +5,7 @@ return {
 		"folke/neodev.nvim",
 	},
 	config = function()
+		local lsp = require("lspconfig")
 		-- Global mappings.
 		-- See `:help vim.diagnostic.*` for documentation on any of the below functions
 		vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
@@ -36,7 +37,7 @@ return {
 		end
 
 		require("neodev").setup()
-		require("lspconfig").lua_ls.setup({
+		lsp.lua_ls.setup({
 			on_attach = on_attach,
 			settings = {
 				Lua = {
@@ -44,6 +45,17 @@ return {
 					workspace = { checkThirdParty = false },
 				},
 			},
+		})
+		lsp.html.setup({
+			on_attach = on_attach
+		})
+
+		lsp.astro.setup({
+			on_attach = on_attach
+		})
+		
+		lsp.tsserver.setup({
+			on_attach = on_attach
 		})
 	end
 }

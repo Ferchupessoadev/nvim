@@ -34,8 +34,7 @@ vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Switch to up window" })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Switch to right window" })
 
 -- buffers keymaps
-vim.keymap.set("n", "<leader>q", ":bd!<cr>", { desc = "Close current buffer" })
-vim.keymap.set("n", "<C-n>", ":enew<cr>", { desc = "New buffer" })
+vim.keymap.set("n", "<leader>d", ":bd!<cr>", { desc = "Close current buffer" })
 vim.keymap.set("n", "<leader>z", ":bn<cr>", { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>x", ":bp<cr>", { desc = "Prev buffer" })
 
@@ -45,3 +44,6 @@ vim.keymap.set("n", "<leader>-", "<C-w>5-", { desc = "Equal window" })
 vim.keymap.set("n", "<leader>+", "<C-w>5+", { desc = "Equal window" })
 vim.keymap.set("n", "<leader><", "<C-w>5<", { desc = "Equal window" })
 vim.keymap.set("n", "<leader>>", "<C-w>5>", { desc = "Equal window" })
+
+-- nerdtree keymaps
+vim.keymap.set("n","<C-n>", ":NvimTreeFindFileToggle <CR>", { desc = "Toggle NvimTree" })

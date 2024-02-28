@@ -7,7 +7,7 @@ g.mapleader = " " -- change leader to a comma o other letter
 
 -- neovim UI
 opt.number = true
-opt.reltivenumber = true
+opt.relativenumber = true
 opt.clipboard = "unnamedplus"
 opt.syntax = "on"
 opt.showmatch = true -- highlight matching parenthesis

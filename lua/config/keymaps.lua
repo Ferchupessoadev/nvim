@@ -7,7 +7,6 @@ vim.keymap.set("i", "<C-l>", "<Right>", { desc = "move right" })
 -- relaod config neovim
 vim.keymap.set("n", "<F6>", ":source ~/.config/nvim/init.lua<cr>", { desc = "Source the current file" })
 
-
 -- save and quit current file
 vim.keymap.set({"n","i","s"} , "<C-s>", "<cmd>w<cr>", { desc = "save file" })
 vim.keymap.set("n", "<C-q>", ":q<cr>", { desc = "Quit file" })
@@ -25,7 +24,7 @@ vim.keymap.set("t", "<C-x>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 -- load source config %
 vim.keymap.set("n", "<F7>", ":source %<cr>", { desc = "Reload config" })
 
--- togglet number
+-- toggle number
 vim.keymap.set("n", "<leader><leader>n", ":set relativenumber!<cr>", { desc = "Toggle line number" })
 
 -- switch bentween window
@@ -46,4 +45,3 @@ vim.keymap.set("n", "<leader>-", "<C-w>5-", { desc = "Equal window" })
 vim.keymap.set("n", "<leader>+", "<C-w>5+", { desc = "Equal window" })
 vim.keymap.set("n", "<leader><", "<C-w>5<", { desc = "Equal window" })
 vim.keymap.set("n", "<leader>>", "<C-w>5>", { desc = "Equal window" })
-

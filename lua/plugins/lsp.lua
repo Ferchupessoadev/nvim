@@ -5,7 +5,7 @@ return {
 		"folke/neodev.nvim",
 	},
 	config = function()
-		local lsp = require("lspconfig")
+		local lspconfig = require("lspconfig")
 		-- Global mappings.
 		-- See `:help vim.diagnostic.*` for documentation on any of the below functions
 		vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
@@ -27,35 +27,51 @@ return {
 			vim.keymap.set('n', '<space>wl', function()
 				print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
 			end, opts)
+
 			vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, opts)
 			vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, opts)
 			vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
 			vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-			vim.keymap.set('n', '<ctrl>f', function()
+			vim.keymap.set('n', '<C-f>', function()
 				vim.lsp.buf.format { async = true }
 			end, opts)
 		end
 
 		require("neodev").setup()
-		lsp.lua_ls.setup({
-			on_attach = on_attach,
-			settings = {
-				Lua = {
-					telemetry = { enable = false },
-					workspace = { checkThirdParty = false },
-				},
-			},
-		})
-		lsp.html.setup({
-			on_attach = on_attach
+
+		-- if you just want default config for the servers then put them in a table
+		local servers = { "html", "lua_ls", "tsserver", "astro", "intelephense", "emmet_language_server"}
+
+		for _, lsp in ipairs(servers) do
+		  lspconfig[lsp].setup {
+		    on_attach = on_attach,
+		  }
+		end
+
+		lspconfig.html.setup({
+			filetypes = {"html", "php", "js", "astro", "jsx", "tsx"}
 		})
 
-		lsp.astro.setup({
-			on_attach = on_attach
-		})
-		
-		lsp.tsserver.setup({
-			on_attach = on_attach
+		lspconfig.emmet_language_server.setup({
+			filetypes = {
+				'html',
+				'css',
+				'scss',
+        	   	'javascriptreact',
+        	   	'typescriptreact',
+        	   	'haml',
+        	   	'xml',
+        	   	'xsl',
+        	   	'pug',
+        	   	'slim',
+        	   	'sass',
+        	   	'stylus',
+        	   	'less',
+        	   	'sss',
+        	   	'hbs',
+        	   	'handlebars',
+				'php',
+			};
 		})
 	end
 }

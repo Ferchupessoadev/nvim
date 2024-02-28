@@ -4,10 +4,10 @@ local g = vim.g
 --- global variables
 g.mapleader = " " -- change leader to a comma o other letter
 
-vim.cmd.colorscheme("slate")
 
 -- neovim UI
 opt.number = true
+opt.reltivenumber = true
 opt.clipboard = "unnamedplus"
 opt.syntax = "on"
 opt.showmatch = true -- highlight matching parenthesis

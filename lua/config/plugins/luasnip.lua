@@ -34,7 +34,7 @@ function M.setup()
 
   -- <c-j> is my jump backwards key.
   -- this always moves to the previous item within the snippet
-  vim.keymap.set({ "i", "s" }, "<c-j>", function()
+  vim.keymap.set({ "i", "s" }, "<c-i>", function()
     if ls.jumpable(-1) then
       ls.jump(-1)
     end

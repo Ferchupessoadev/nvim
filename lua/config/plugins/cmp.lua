@@ -45,6 +45,9 @@ function M.setup()
 			{ name = "nvim_lsp" },
 			{ name = "path" },
     		{ name = "luasnip" }
+		},
+		formatting = {
+			 format = require("tailwindcss-colorizer-cmp").formatter,
 		}
 	})
 

@@ -1,5 +1,5 @@
 -- Author: Fernando Matías Pessoa
 -- Email: fernandomatiaspessoa471@gmail.com
 -- github: Ferchupessoadev
--- twitter: ferchupessoa
+-- twitter: https://twitter.com/ferchupessoa
 require("config")

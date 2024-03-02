@@ -18,6 +18,10 @@ return {
 					"vim",
 					"vimdoc",
 					"markdown",
+					"c",
+					"cpp",
+					"bash",
+					"python"
             },
             highlight = {
                 enable = true,

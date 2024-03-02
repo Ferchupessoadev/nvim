@@ -1,4 +1,4 @@
--- navegation in mode insert
+--navegation in mode insert
 vim.keymap.set("i", "<C-h>", "<Left>", { desc = "move left" })
 vim.keymap.set("i", "<C-j>", "<Down>", { desc = "move down" })
 vim.keymap.set("i", "<C-k>", "<Up>", { desc = "move up" })
@@ -10,6 +10,7 @@ vim.keymap.set("n", "<F6>", ":source ~/.config/nvim/init.lua<cr>", { desc = "Sou
 -- save and quit current file
 vim.keymap.set({"n","i","s"} , "<C-s>", "<cmd>w<cr>", { desc = "save file" })
 vim.keymap.set("n", "<C-q>", ":q<cr>", { desc = "Quit file" })
+vim.keymap.set("n", "<A-S-q>", ":q!<cr>", { desc = "Quit file" })
 
 -- clear highlight
 vim.keymap.set("n", "<ESC>", ":nohl<CR>", { desc = "Clear highlight" })
@@ -35,8 +36,8 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Switch to right window" })
 
 -- buffers keymaps
 vim.keymap.set("n", "<leader>d", ":bd!<cr>", { desc = "Close current buffer" })
-vim.keymap.set("n", "<leader>z", ":bn<cr>", { desc = "Next buffer" })
-vim.keymap.set("n", "<leader>x", ":bp<cr>", { desc = "Prev buffer" })
+vim.keymap.set("n", "<tab>", ":bn<cr>", { desc = "Next buffer" })
+vim.keymap.set("n", "<S-tab>", ":bp<cr>", { desc = "Prev buffer" })
 
 -- redimencinar paneles
 vim.keymap.set("n", "<leader>=", "<C-w>=", { desc = "Equal window" })
@@ -45,5 +46,5 @@ vim.keymap.set("n", "<leader>+", "<C-w>5+", { desc = "Equal window" })
 vim.keymap.set("n", "<leader><", "<C-w>5<", { desc = "Equal window" })
 vim.keymap.set("n", "<leader>>", "<C-w>5>", { desc = "Equal window" })
 
--- nerdtree keymaps
+-- nvim-tree keymaps
 vim.keymap.set("n","<C-n>", ":NvimTreeFindFileToggle <CR>", { desc = "Toggle NvimTree" })

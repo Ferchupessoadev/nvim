@@ -4,7 +4,6 @@ local g = vim.g
 --- global variables
 g.mapleader = " " -- change leader to a comma o other letter
 
-
 -- neovim UI
 opt.number = true
 opt.relativenumber = true

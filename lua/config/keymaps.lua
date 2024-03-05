@@ -22,6 +22,9 @@ vim.keymap.set("n", "<leader>v", ":vsplit<cr>", { desc = "Split window vertical"
 -- scape of mode terminal
 vim.keymap.set("t", "<C-x>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
+-- open new terminal
+vim.keymap.set("n", "<C-t>", ":term<cr>", { desc = "open new terminal" })
+
 -- load source config %
 vim.keymap.set("n", "<F7>", ":source %<cr>", { desc = "Reload config" })
 

@@ -21,7 +21,9 @@ return {
 					"c",
 					"cpp",
 					"bash",
-					"python"
+					"python",
+					"sql",
+					"astro",
             },
             highlight = {
                 enable = true,

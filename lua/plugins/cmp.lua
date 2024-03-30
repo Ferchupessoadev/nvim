@@ -14,4 +14,3 @@ return {
 	main = "config.plugins.cmp",
 	config = true
 }
-

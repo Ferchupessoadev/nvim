@@ -40,13 +40,17 @@ return {
 		require("neodev").setup()
 
 		-- if you just want default config for the servers then put them in a table
-		local servers = { "html", "lua_ls", "tsserver", "astro", "intelephense", "emmet_language_server", "tailwindcss"}
+		local servers = { "html", "sqlls" , "lua_ls", "tsserver", "astro", "intelephense", "emmet_language_server", "tailwindcss"}
 
 		for _, lsp in ipairs(servers) do
 		  lspconfig[lsp].setup {
 		    on_attach = on_attach,
 		  }
 		end
+		
+		lspconfig.tsserver.setup({
+			filetypes = {"jsx", "tsx", "astro", "js", "mjs", "ts"}
+		})
 
 		lspconfig.html.setup({
 			filetypes = {"html", "php", "js", "astro", "jsx", "tsx"}

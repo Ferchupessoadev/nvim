@@ -1,26 +1,21 @@
-local function debianNerdFont()
-	return [[  ]]
-end
-
 return {
 	'nvim-lualine/lualine.nvim',
 	dependencies = { 'nvim-tree/nvim-web-devicons' },
 	config = function()
     require("lualine").setup {
 		options = {
-			theme = "auto",
+			theme = "ayu_dark",
 			icons_enabled = true,
 			globalstatus = true,
 		},
 		extensions = { "quickfix", "fugitive" },
 		sections = {
-			lualine_a = { { "mode", upper = true } },
+			lualine_a = { { "mode" } },
        		lualine_b = { { "branch", icon = "" }, "db_ui#statusline" },
        		lualine_c = { { "filename", file_status = true, path = 1 } },
        		lualine_x = {
        		   "diagnostics",
        		   "diff",
-	   		   { debianNerdFont },
        		},
 			lualine_y = {"filetype"},
 			lualine_z = { "location" },

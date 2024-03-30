@@ -26,7 +26,7 @@ function M.setup()
 
   -- <c-k> is my expansion key
   -- this will expand the current item or jump to the next item within the snippet.
-  vim.keymap.set({ "i", "s" }, "<c-p>", function()
+  vim.keymap.set({ "i" }, "<c-k>", function()
     if ls.expand_or_jumpable() then
       ls.expand_or_jump()
     end
@@ -34,7 +34,7 @@ function M.setup()
 
   -- <c-j> is my jump backwards key.
   -- this always moves to the previous item within the snippet
-  vim.keymap.set({ "i", "s" }, "<c-i>", function()
+  vim.keymap.set({ "i" }, "<c-j>", function()
     if ls.jumpable(-1) then
       ls.jump(-1)
     end

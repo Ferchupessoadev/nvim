@@ -24,6 +24,7 @@ return {
 					"python",
 					"sql",
 					"astro",
+					"arduino",
             },
             highlight = {
                 enable = true,

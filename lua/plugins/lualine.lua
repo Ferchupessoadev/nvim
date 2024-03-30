@@ -6,6 +6,8 @@ return {
 		options = {
 			theme = "ayu_dark",
 			icons_enabled = true,
+			component_separators = { left = '', right = ''},
+			section_separators = { left = '', right = ''},
 			globalstatus = true,
 		},
 		extensions = { "quickfix", "fugitive" },

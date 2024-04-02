@@ -11,7 +11,6 @@ vim.keymap.set("n", "<F6>", ":source ~/.config/nvim/init.lua<cr>", { desc = "Sou
 vim.keymap.set({"n","i","s"} , "<C-s>", "<cmd>w<cr>", { desc = "save file" })
 vim.keymap.set("n", "<C-q>", ":q<cr>", { desc = "Quit file" })
 vim.keymap.set("n", "<A-S-q>", ":q!<cr>", { desc = "Quit file" })
-
 -- clear highlight
 vim.keymap.set("n", "<ESC>", ":nohl<CR>", { desc = "Clear highlight" })
 
@@ -54,3 +53,6 @@ vim.keymap.set("n","<C-n>", ":NvimTreeFindFileToggle <CR>", { desc = "Toggle Nvi
 
 -- Map the 'y' key to execute :put
 vim.keymap.set("n", "<C-A-v>", ":put<CR>" , { desc = "Map the 'y' key to execute :put" })
+
+-- Colorizer toggle
+vim.keymap.set("n", "<C-A-c>", ":ColorizerToggle<CR>", { desc = "" })

@@ -47,7 +47,7 @@ return {
 		    on_attach = on_attach,
 		  }
 		end
-		
+
 		lspconfig.tsserver.setup({
 			filetypes = {"jsx", "tsx", "astro", "js", "mjs", "ts"}
 		})

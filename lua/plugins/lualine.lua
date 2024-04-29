@@ -21,6 +21,7 @@ return {
 					"telescope",
 					"alpha",
 					"",
+					"TelescopePrompt",
 				},
 			},
 			extensions = { "quickfix", "fugitive" },
@@ -40,11 +41,11 @@ return {
 				lualine_z = {},
 			},
 			winbar = {
-				lualine_a = { { "buffers", color = { fg = "#ffffff" } } },
+				lualine_a = {},
 				lualine_b = {},
 				lualine_c = {},
 				lualine_x = {},
-				lualine_y = { "location" },
+				lualine_y = {},
 				lualine_z = {},
 			},
 			inactive_winbar = {

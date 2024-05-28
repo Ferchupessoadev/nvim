@@ -1,6 +1,5 @@
 return {
 	"stevearc/conform.nvim",
-	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local conform = require("conform")
 
@@ -13,9 +12,8 @@ return {
 
 			formatters_by_ft = {
 				php = { "php-cs-fixer" },
-				javascriptreact = { "prettier" },
-				typescriptreact = { "prettier" },
 				html = { "prettier" },
+				javascript = { "prettier" },
 				json = { "prettier" },
 				yaml = { "prettier" },
 				markdown = { "prettier" },

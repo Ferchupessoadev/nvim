@@ -6,6 +6,6 @@ return {
 		vim.g.enfocado_style = "neon"
 	end,
 	config = function()
-		vim.cmd.colorscheme("onedark")
+		vim.cmd.colorscheme("enfocado")
 	end,
 }

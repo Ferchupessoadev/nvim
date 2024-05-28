@@ -8,11 +8,6 @@ return {
 				component_separators = { left = "", right = "" },
 				section_separators = { left = "", right = "" },
 				globalstatus = true,
-				refresh = {
-					statusline = 10000,
-					tabline = 10000,
-					winbar = 10000,
-				},
 				disabled_filetypes = {
 					"NvimTree",
 					"help",
@@ -42,7 +37,7 @@ return {
 			},
 			winbar = {
 				lualine_a = {},
-				lualine_b = {},
+				lualine_b = { "buffers" },
 				lualine_c = {},
 				lualine_x = {},
 				lualine_y = {},

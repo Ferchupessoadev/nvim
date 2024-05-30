@@ -55,4 +55,7 @@ vim.keymap.set("n", "<C-n>", "<cmd>NvimTreeFindFileToggle <CR>", { desc = "Toggl
 vim.keymap.set("n", "<C-A-v>", ":put<CR>", { desc = "Map the 'y' key to execute :put" })
 
 -- Colorizer toggle
-vim.keymap.set("n", "<C-A-c>", "<cmd>ColorizerToggle<CR>", { desc = "" })
+vim.keymap.set("n", "<C-A-c>", "<cmd>ColorizerToggle<CR>", { desc = "Colorizer Toggle" })
+
+-- alpha nvim
+vim.keymap.set("n", "<C-a>", "<cmd>Alpha<CR>", { desc = "Alpha nvim" })

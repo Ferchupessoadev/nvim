@@ -1,4 +1,4 @@
-return {
+local M = {
 	"nvim-telescope/telescope.nvim",
 	event = "VeryLazy",
 	dependencies = {
@@ -94,3 +94,51 @@ return {
 		},
 	},
 }
+function M.config()
+	local actions = require("telescope.actions")
+
+	require("telescope").setup({
+		defaults = {
+			selection_caret = " ",
+			prompt_prefix = "   ",
+			border = true,
+			entry_prefix = "  ",
+			multi_icon = "  ",
+			hl_result_eol = true,
+			prompt_position = "top",
+			layout_config = {
+				horizontal = {
+					prompt_position = "top",
+					preview_width = 0.65,
+					results_width = 0.2,
+				},
+				vertical = {
+					prompt_position = "top",
+					preview_height = 0.33,
+					results_height = 0.19,
+					mirror = true,
+				},
+				width = 0.99,
+				height = 0.99,
+			},
+			mappings = {
+				i = {
+					["<C-n>"] = actions.cycle_history_next,
+					["<C-p>"] = actions.cycle_history_prev,
+
+					["<C-j>"] = actions.move_selection_next,
+					["<C-k>"] = actions.move_selection_previous,
+
+					["<C-q>"] = actions.close,
+				},
+				n = {
+					["<esc>"] = actions.close,
+					["j"] = actions.move_selection_next,
+					["k"] = actions.move_selection_previous,
+					["q"] = actions.close,
+				},
+			},
+		},
+	})
+end
+return M

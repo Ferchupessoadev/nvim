@@ -104,8 +104,13 @@ function M.config()
 			border = true,
 			entry_prefix = "  ",
 			multi_icon = "  ",
+			sorting_strategy = "ascending",
 			hl_result_eol = true,
 			prompt_position = "top",
+			layout_strategy = "horizontal",
+			preview = {
+				hide_on_startup = true,
+			},
 			layout_config = {
 				horizontal = {
 					prompt_position = "top",
@@ -118,8 +123,8 @@ function M.config()
 					results_height = 0.19,
 					mirror = true,
 				},
-				width = 0.99,
-				height = 0.99,
+				width = 0.74,
+				height = 0.74,
 			},
 			mappings = {
 				i = {

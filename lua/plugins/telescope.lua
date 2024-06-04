@@ -102,6 +102,11 @@ function M.config()
 			selection_caret = " ",
 			prompt_prefix = "   ",
 			border = true,
+			borderchars = {
+				prompt = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+				results = { "─", "│", "─", "│", "╭", "╮", "┤", "├" },
+				preview = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+			},
 			entry_prefix = "  ",
 			multi_icon = "  ",
 			sorting_strategy = "ascending",
@@ -135,6 +140,13 @@ function M.config()
 					["<C-k>"] = actions.move_selection_previous,
 
 					["<C-q>"] = actions.close,
+					["<C-d>"] = function(prompt_bufnr)
+						local selection = action_state.get_selected_entry()
+						local filepath = selection.path
+						actions.close(prompt_bufnr)
+						vim.fn.delete(filepath)
+						print("Deleted file: " .. filepath)
+					end,
 				},
 				n = {
 					["<esc>"] = actions.close,

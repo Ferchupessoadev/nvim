@@ -25,6 +25,7 @@ return {
 			"python",
 			"sql",
 			"arduino",
+			"cpp",
 		},
 		highlight = {
 			enable = true,
@@ -45,6 +46,14 @@ return {
 					["il"] = "@loop.inner",
 				},
 			},
+		},
+		selection_modes = {
+			["@function.outer"] = "V", -- linewise
+			["@function.inner"] = "V", -- linewise
+			["@conditional.outer"] = "V",
+			["@conditional.inner"] = "V",
+			["@loop.outer"] = "V",
+			["@loop.inner"] = "V",
 		},
 	},
 }

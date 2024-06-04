@@ -12,6 +12,9 @@ return {
 		vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
 		vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
 		vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist)
+		vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action)
+		vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references)
+		vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename)
 
 		local on_attach = function(client, bufnr)
 			vim.bo[bufnr].omnifunc = "v:lua.vim.lsp.omnifunc"
@@ -59,7 +62,7 @@ return {
 		end
 
 		lspconfig.tsserver.setup({
-			filetypes = { "jsx", "tsx", "astro", "js", "mjs", "ts" },
+			filetypes = { "jsx", "astro", "js", "mjs" },
 		})
 
 		lspconfig.html.setup({

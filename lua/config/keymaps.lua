@@ -58,4 +58,4 @@ vim.keymap.set("n", "<C-A-v>", ":put<CR>", { desc = "Map the 'y' key to execute 
 vim.keymap.set("n", "<C-A-c>", "<cmd>ColorizerToggle<CR>", { desc = "Colorizer Toggle" })
 
 -- alpha nvim
-vim.keymap.set("n", "<C-a>", "<cmd>Alpha<CR>", { desc = "Alpha nvim" })
+vim.keymap.set("n", "<C-A-a>", "<cmd>Alpha<CR>", { desc = "Alpha nvim" })

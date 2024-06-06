@@ -1,6 +1,13 @@
+local servers = {
+	"lua_ls",
+	"bash_language_server",
+}
+
 return {
 	"williamboman/mason.nvim",
 	config = true,
+	automatic_installation = true,
+	ensure_installed = servers,
 	opts = {
 		ui = {
 			icons = {

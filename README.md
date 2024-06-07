@@ -33,4 +33,3 @@
 - [Luasnip](https://github.com/L3MON4D3/LuaSnip)
 
 - [MarkdownPreview](https://github.com/iamcco/markdown-preview.nvim)
-# programacion-pedro

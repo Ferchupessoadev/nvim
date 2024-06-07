@@ -4,6 +4,7 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
+				theme = "enfocado",
 				icons_enabled = true,
 				component_separators = "",
 				section_separators = { left = "", right = "" },

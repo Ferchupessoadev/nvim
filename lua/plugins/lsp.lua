@@ -18,7 +18,7 @@ return {
 
 		local on_attach = function(client, bufnr)
 			vim.bo[bufnr].omnifunc = "v:lua.vim.lsp.omnifunc"
-			vim.keymap("n", "<space>K", vim.lsp.buf.hover, { buffer = bufnr })
+			vim.keymap.set("n", "<space>K", vim.lsp.buf.hover, { buffer = bufnr })
 			local opts = { buffer = bufnr }
 			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)

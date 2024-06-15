@@ -3,9 +3,14 @@ return {
 	config = function()
 		require("onedark").setup({
 			-- Main options --
-			style = "deep", -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+			style = "cool",   -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
 			transparent = false, -- Show/hide background
+			term_colors = true,
 
+			-- lualine config colorscheme.
+			lualine = {
+				transparent = true,
+			},
 			-- Plugins Config --
 			diagnostics = {
 				darker = true, -- darker colors for diagnostic

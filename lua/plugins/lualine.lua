@@ -4,10 +4,11 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				theme = "enfocado",
+				theme = "onedark",
 				icons_enabled = true,
 				component_separators = "",
-				section_separators = { left = "", right = "" },
+				transparent = true,
+				section_separators = { left = " ", right = " " },
 				globalstatus = true,
 				disabled_filetypes = {
 					"NvimTree",
@@ -27,7 +28,7 @@ return {
 						"mode",
 						separator = { left = "" },
 						right_padding = 2,
-						icon = { "", color = { fg = "#aaff12" } },
+						icon = { "", color = { fg = "#FFFFFF" } },
 						color = { fg = "#ffffff" },
 					},
 				},
@@ -48,7 +49,16 @@ return {
 					{ "diagnostics" },
 					{ "diff", symbols = { added = " ", modified = "󰝤 ", removed = " " } },
 				},
-				lualine_y = { { [[ "Debian" ]], icon = { " ", color = { fg = "#ff0033" } } }, "filetype" },
+				lualine_y = {
+					{
+						[[ "Debian" ]],
+						icon = {
+							" ", color = { fg = "#ff0033" }
+						},
+						separator = { left = "" },
+						left_padding = 4
+					},
+					"filetype" },
 				lualine_z = { { "location", separator = { right = "" }, left_padding = 4 } },
 			},
 			winbar = {

@@ -1,25 +1,26 @@
 return {
 	"stevearc/conform.nvim",
+	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local conform = require("conform")
 
 		conform.setup({
-			formatters = {
-				prettier = {
-					prepend_args = { "--single-quote" },
-				},
-			},
-
 			formatters_by_ft = {
+				astro = { "prettierd" },
 				php = { "php-cs-fixer" },
-				html = { "prettier" },
-				javascript = { "prettier" },
+				javascript = { "prettierd" },
+				typescript = { "prettierd" },
+				javascriptreact = { "prettier" },
+				typescriptreact = { "prettier" },
+				svelte = { "prettier" },
+				css = { "prettierd" },
+				html = { "prettierd" },
 				json = { "prettier" },
 				yaml = { "prettier" },
 				markdown = { "prettier" },
+				graphql = { "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
-				bash = { "beautysh" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

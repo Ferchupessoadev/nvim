@@ -43,7 +43,7 @@ function M.setup()
 			{ name = "nvim_lua" },
 			{ name = "nvim_lsp" },
 			{ name = "path" },
-    		{ name = "luasnip" }
+    	{ name = "luasnip" }
 		},
 		formatting = {
 			 format = require("tailwindcss-colorizer-cmp").formatter,

@@ -1,6 +1,8 @@
 local servers = {
 	"lua_ls",
 	"bash_language_server",
+	"tsserver",
+	"eslint_d",
 }
 
 return {

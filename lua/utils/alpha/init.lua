@@ -33,7 +33,7 @@ startify.section.bottom_buttons.val = {
 }
 
 -- disable MRU
-startify.section.mru.val = { { type = "padding", val = 0 } }
+startify.section.mru.val = { { type = "padding", val = 10 } }
 -- disable MRU cwd
 --startify.section.mru_cwd.val = { { type = "padding", val = 0 } }
 

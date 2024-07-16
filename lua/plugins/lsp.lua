@@ -62,11 +62,11 @@ return {
 		end
 
 		lspconfig.tsserver.setup({
-			filetypes = { "jsx", "astro", "js", "mjs" },
+			filetypes = { "jsx", "js", "mjs", "astro" },
 		})
 
 		lspconfig.html.setup({
-			filetypes = { "html", "php", "js", "astro", "jsx", "tsx" },
+			filetypes = { "html", "php", "js", "jsx", "tsx" },
 		})
 
 		lspconfig.emmet_language_server.setup({

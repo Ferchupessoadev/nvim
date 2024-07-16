@@ -7,8 +7,8 @@ return {
 				theme = "onedark",
 				icons_enabled = true,
 				component_separators = "",
-				transparent = true,
-				section_separators = { left = " ", right = " " },
+				transparent = false,
+				section_separators = { left = '', right = '' },
 				globalstatus = true,
 				disabled_filetypes = {
 					"NvimTree",
@@ -20,6 +20,11 @@ return {
 					"",
 					"TelescopePrompt",
 				},
+				refresh = {
+					statusline = 1000,
+					tabline = 1000,
+					winbar = 1000,
+				}
 			},
 			extensions = { "quickfix", "fugitive" },
 			sections = {

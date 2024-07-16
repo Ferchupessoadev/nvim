@@ -4,7 +4,7 @@
 -- twitter: https://twitter.com/ferchupessoa
 require("config")
 vim.filetype.add({
-	extension = {
-		astro = "astro",
-	},
+    extension = {
+        astro = "astro",
+    },
 })

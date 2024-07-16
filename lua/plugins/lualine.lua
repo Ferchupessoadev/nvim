@@ -7,7 +7,8 @@ return {
 				theme = "onedark",
 				icons_enabled = true,
 				component_separators = "",
-				section_separators = { left = " ", right = " " },
+				transparent = true,
+				section_separators = { left = "", right = "" },
 				globalstatus = true,
 				disabled_filetypes = {
 					"NvimTree",
@@ -19,6 +20,11 @@ return {
 					"",
 					"TelescopePrompt",
 				},
+				refresh = {
+					statusline = 1000,
+					tabline = 1000,
+					winbar = 1000,
+				},
 			},
 			extensions = { "quickfix", "fugitive" },
 			sections = {
@@ -26,7 +32,8 @@ return {
 					{
 						"mode",
 						separator = { left = "" },
-						icon = { "", color = { fg = "#ffffff" } },
+						right_padding = 2,
+						icon = { "", color = { fg = "#FFFFFF" } },
 						color = { fg = "#ffffff" },
 					},
 				},

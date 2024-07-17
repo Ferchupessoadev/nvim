@@ -9,9 +9,10 @@
 - [Autopairs](https://github.com/windwp/nvim-autopairs)
 
 - Completion
-- [Cmp](https://github.com/hrsh7th/nvim-cmp)
-- [LSP](https://github.com/neovim/nvim-lspconfig)
-- [Codeium](https://codeium.com/)
+
+  - [Cmp](https://github.com/hrsh7th/nvim-cmp)
+  - [LSP](https://github.com/neovim/nvim-lspconfig)
+  - [Codeium](https://github.com/Exafunction/codeium.vim)
 
 - [Color-picker](https://github.com/ziontee113/color-picker.nvim)
 

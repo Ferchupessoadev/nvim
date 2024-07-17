@@ -53,7 +53,7 @@ function M.setup()
     end
 
     lspconfig.tsserver.setup({
-        filetypes = { "jsx", "js", "mjs", "astro" },
+        filetypes = { "jsx", "js", "mjs" },
     })
 
     lspconfig.html.setup({

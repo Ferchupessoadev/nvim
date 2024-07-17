@@ -1,4 +1,4 @@
-# My nvim configuration.
+# My nvim configuration
 
 ## Screenshot
 

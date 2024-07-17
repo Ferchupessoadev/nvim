@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![config de nvim](./img/img.png)
+![config de nvim](./img/screenshot.png)
 
 ## Plugins
 

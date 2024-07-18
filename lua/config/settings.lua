@@ -5,7 +5,6 @@ local g = vim.g
 g.mapleader = " " -- change leader to a comma o other letter
 
 -- neovim UI
-opt.mouse = ""
 opt.number = true
 opt.relativenumber = true
 opt.hidden = true

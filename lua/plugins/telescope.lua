@@ -63,6 +63,8 @@ local M = {
                     end,
                 })
             end,
+
+            desc = "Telescope find Plugins",
         },
         {
             "<leader>pf",
@@ -91,6 +93,13 @@ local M = {
                 require("telescope.builtin").colorscheme({ enable_preview = true })
             end,
             desc = "Telescope colorscheme",
+        },
+        {
+            "<leader>pk",
+            function()
+                require("telescope.builtin").keymaps()
+            end,
+            desc = "Telescope keymaps",
         },
     },
 }

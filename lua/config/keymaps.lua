@@ -21,8 +21,8 @@ vim.keymap.set("n", "<leader>v", ":vsplit<cr>", { desc = "Split window vertical"
 -- scape of mode terminal
 vim.keymap.set("t", "<C-x>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
--- open new terminal
-vim.keymap.set("n", "<C-t>", ":term<cr>", { desc = "open new terminal" })
+-- create new terminal with toggleterm
+vim.keymap.set("n", "<C-t>", ":ToggleTerm<cr>", { desc = "open new terminal" })
 
 -- load source config %
 vim.keymap.set("n", "<F7>", ":source %<cr>", { desc = "Reload config" })
@@ -59,3 +59,9 @@ vim.keymap.set("n", "<C-A-c>", "<cmd>ColorizerToggle<CR>", { desc = "Colorizer T
 
 -- alpha nvim
 vim.keymap.set("n", "<C-A-a>", "<cmd>Alpha<CR>", { desc = "Alpha nvim" })
+
+-- mode paste
+vim.keymap.set("n", "<C-A-p>", "<cmd>set paste<CR>", { desc = "Mode paste on" })
+
+-- mode no paste
+vim.keymap.set("n", "<C-A-n>", "<cmd>set nopaste<CR>", { desc = "Mode paste off" })

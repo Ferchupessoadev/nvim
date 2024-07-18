@@ -38,12 +38,14 @@ function M.setup()
     local servers = {
         "html",
         "lua_ls",
+        "arduino_language_server",
         "tsserver",
         "astro",
         "intelephense",
         "phpactor",
         "emmet_language_server",
         "tailwindcss",
+        "clangd",
     }
 
     for _, lsp in ipairs(servers) do

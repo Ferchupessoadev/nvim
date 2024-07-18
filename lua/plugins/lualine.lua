@@ -4,16 +4,18 @@ return {
     config = function()
         require("lualine").setup({
             options = {
-                theme = "onedark",
+                theme = "tokyonight",
                 icons_enabled = true,
-                component_separators = "",
+                component_separtrueators = "",
                 transparent = true,
                 section_separators = { left = "", right = "" },
                 globalstatus = true,
+                winbar_component_separators = { left = "", right = "" },
                 disabled_filetypes = {
                     "NvimTree",
                     "help",
                     "lazy",
+                    "toggleterm",
                     "mason",
                     "telescope",
                     "alpha",
@@ -61,7 +63,7 @@ return {
                 lualine_z = { { "location", separator = { right = "" }, left_padding = 4 } },
             },
             winbar = {
-                lualine_a = { { "buffers" } },
+                lualine_a = {},
                 lualine_b = {},
                 lualine_c = {},
                 lualine_x = {},

@@ -13,6 +13,7 @@ return {
                 winbar_component_separators = { left = "", right = "" },
                 disabled_filetypes = {
                     "help",
+                    "NvimTree",
                     "lazy",
                     "toggleterm",
                     "mason",

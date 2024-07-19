@@ -20,11 +20,10 @@ return {
             "vimdoc",
             "markdown",
             "c",
-            "cpp",
             "bash",
             "python",
             "sql",
-            "arduino",
+            -- "arduino",
             "cpp",
         },
         highlight = {

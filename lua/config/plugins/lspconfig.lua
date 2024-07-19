@@ -36,16 +36,16 @@ function M.setup()
 
     -- if you just want default config for the servers then put them in a table
     local servers = {
-        "html",
+        -- "html",
         "lua_ls",
-        "arduino_language_server",
+        -- "arduino_language_server",
         "tsserver",
         "astro",
         "intelephense",
         "phpactor",
         "emmet_language_server",
         "tailwindcss",
-        "clangd",
+        -- "clangd",
     }
 
     for _, lsp in ipairs(servers) do

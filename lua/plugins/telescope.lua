@@ -119,11 +119,11 @@ function M.config()
             entry_prefix = "  ",
             multi_icon = "  ",
             sorting_strategy = "ascending",
-            hl_result_eol = true,
+            hl_result_eol = false,
             prompt_position = "top",
             layout_strategy = "horizontal",
             preview = {
-                hide_on_startup = true,
+                hide_on_startup = false,
             },
             layout_config = {
                 horizontal = {

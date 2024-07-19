@@ -12,7 +12,6 @@ return {
                 globalstatus = true,
                 winbar_component_separators = { left = "", right = "" },
                 disabled_filetypes = {
-                    "NvimTree",
                     "help",
                     "lazy",
                     "toggleterm",
@@ -57,26 +56,16 @@ return {
                     { "diff", symbols = { added = " ", modified = "󰝤 ", removed = " " } },
                 },
                 lualine_y = {
-                    { [[ "Debian" ]], separator = { left = "" }, icon = { " ", color = { fg = "#ff0033" } } },
+                    {
+                        function()
+                            return "Debian"
+                        end,
+                        separator = { left = "" },
+                        icon = { " ", color = { fg = "#ff0033" } },
+                    },
                     "filetype",
                 },
                 lualine_z = { { "location", separator = { right = "" }, left_padding = 4 } },
-            },
-            winbar = {
-                lualine_a = {},
-                lualine_b = {},
-                lualine_c = {},
-                lualine_x = {},
-                lualine_y = {},
-                lualine_z = {},
-            },
-            inactive_winbar = {
-                lualine_a = {},
-                lualine_b = {},
-                lualine_c = {},
-                lualine_x = {},
-                lualine_y = {},
-                lualine_z = {},
             },
         })
     end,

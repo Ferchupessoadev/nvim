@@ -24,8 +24,8 @@
 
 - ### Git integrations
 
-- [fugitive](https://github.com/tpope/vim-fugitive)
-- [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
+  - [fugitive](https://github.com/tpope/vim-fugitive)
+  - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 
 - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
 

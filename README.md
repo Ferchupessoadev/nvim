@@ -6,27 +6,41 @@
 
 ## Plugins
 
-- [Autopairs](https://github.com/windwp/nvim-autopairs)
+- ### UI
 
-- [Cmp](https://github.com/hrsh7th/nvim-cmp)
+  - [notify](https://github.com/rcarriga/nvim-notify)
+  - [Devicons](https://github.com/nvim-tree/nvim-web-devicons)
+  - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
+  - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+  - [Alpha](https://goolord/alpha-nvim)
+  - [bufferline](https://github.com/akinsho/bufferline.nvim)
+  - [Treesitter textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
+  - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+  - [Autopairs](https://github.com/windwp/nvim-autopairs)
+  - [Colorizer](https://github.com/norcalli/nvim-colorizer.lua)
 
-- [LSP](https://github.com/neovim/nvim-lspconfig)
+- ### LSP integrations and autocompletion
 
-- [Codeium](https://github.com/Exafunction/codeium.vim)
-
-- [Colorscheme](https://github.com/norcalli/nvim-colorizer.lua)
+  - [Cmp](https://github.com/hrsh7th/nvim-cmp)
+  - [LSP](https://github.com/neovim/nvim-lspconfig)
+  - [Luasnip](https://github.com/L3MON4D3/LuaSnip)
+  - [Codeium](https://github.com/Exafunction/codeium.vim)
 
 - [Comment](https://github.com/numToStr/Comment.nvim)
 
-- [Devicons](https://github.com/nvim-tree/nvim-web-devicons)
+- ### Formatting and linting
 
-- [Formatting](https://github.com/stevearc/conform.nvim)
+  - [Formatting](https://github.com/stevearc/conform.nvim)
+  - [linting](https://github.com/mfussenegger/nvim-lint)
 
 - ### Git integrations
 
   - [fugitive](https://github.com/tpope/vim-fugitive)
   - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 
-- [Lualine](https://github.com/nvim-lualine/lualine.nvim)
+- ### Functionality
 
-- [Luasnip](https://github.com/L3MON4D3/LuaSnip)
+  - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+  - [Toggleterm](https://github.com/akinsho/toggleterm.nvim)
+  - [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+  - [mason](https://github.com/williamboman/mason.nvim)

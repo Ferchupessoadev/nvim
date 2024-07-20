@@ -22,7 +22,7 @@
 
 - [Formatting](https://github.com/stevearc/conform.nvim)
 
-### Git integrations
+- ### Git integrations
 
 - [fugitive](https://github.com/tpope/vim-fugitive)
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)

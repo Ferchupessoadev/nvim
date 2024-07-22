@@ -13,7 +13,6 @@
   - [Lualine](https://github.com/nvim-lualine/lualine.nvim)
   - [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
   - [Alpha](https://goolord/alpha-nvim)
-  - [bufferline](https://github.com/akinsho/bufferline.nvim)
   - [Treesitter textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
   - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
   - [Autopairs](https://github.com/windwp/nvim-autopairs)

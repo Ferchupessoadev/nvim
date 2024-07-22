@@ -10,7 +10,7 @@ return {
                 transparent = true,
                 section_separators = { left = "", right = "" },
                 globalstatus = true,
-                winbar_component_separators = { left = "", right = "" },
+                winbar_component_separators = { left = " ", right = " " },
                 disabled_filetypes = {
                     "help",
                     "NvimTree",
@@ -67,6 +67,9 @@ return {
                     "filetype",
                 },
                 lualine_z = { { "location", separator = { right = "" }, left_padding = 4 } },
+            },
+            winbar = {
+                lualine_a = { "buffers" },
             },
         })
     end,

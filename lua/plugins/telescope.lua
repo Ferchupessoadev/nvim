@@ -128,16 +128,15 @@ function M.config()
             layout_config = {
                 horizontal = {
                     prompt_position = "top",
-                    preview_width = 0.7,
-                    results_width = 0.3,
+                    preview_width = 0.5,
+                    results_width = 0.5,
                 },
                 vertical = {
                     prompt_position = "top",
-                    preview_height = 0.33,
-                    results_height = 0.19,
-                    mirror = true,
+                    preview_height = 0.5,
+                    results_height = 0.5,
                 },
-                width = 0.74,
+                width = 0.95,
                 height = 0.74,
             },
             mappings = {

@@ -121,21 +121,17 @@ function M.config()
             sorting_strategy = "ascending",
             hl_result_eol = false,
             prompt_position = "top",
-            layout_strategy = "horizontal",
-            preview = {
-                hide_on_startup = false,
-            },
+            layout_strategy = "vertical",
             layout_config = {
                 horizontal = {
                     prompt_position = "top",
-                    preview_width = 0.7,
-                    results_width = 0.3,
+                    preview_width = 0.4,
+                    results_width = 0.6,
                 },
                 vertical = {
                     prompt_position = "top",
                     preview_height = 0.33,
-                    results_height = 0.19,
-                    mirror = true,
+                    results_height = 0.66,
                 },
                 width = 0.74,
                 height = 0.74,

@@ -57,3 +57,16 @@ nvim
   - [Toggleterm](https://github.com/akinsho/toggleterm.nvim)
   - [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
   - [mason](https://github.com/williamboman/mason.nvim)
+
+## Commands
+
+| command       | Action                    |
+| ------------- | ------------------------- |
+| Ctrl + s      | save the file             |
+| Ctrl + q      | quit the current file     |
+| Ctrl + n      | open nerd tree            |
+| Space + b + b | open telescope find files |
+| Space + p + p | open telescope git files  |
+| Space + p + e | open telescope buffers    |
+| Tab           | next buffer               |
+| Shift + Tab   | previous buffer           |

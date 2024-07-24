@@ -130,10 +130,10 @@ function M.config()
                 },
                 vertical = {
                     prompt_position = "top",
-                    preview_height = 0.33,
-                    results_height = 0.66,
+                    preview_height = 0.5,
+                    results_height = 0.5,
                 },
-                width = 0.74,
+                width = 0.95,
                 height = 0.74,
             },
             mappings = {

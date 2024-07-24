@@ -4,6 +4,20 @@
 
 ![config de nvim](./img/neovim.png)
 
+# How to install
+
+Clone the repository in the folder .config/
+
+```bash
+git clone https://github.com/Ferchupessoadev/nvim.git ~/.config/nvim
+```
+
+Run nvim
+
+```bash
+nvim
+```
+
 ## Plugins
 
 - ### UI

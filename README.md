@@ -60,13 +60,14 @@ nvim
 
 ## Commands
 
-| command       | Action                    |
-| ------------- | ------------------------- |
-| Ctrl + s      | save the file             |
-| Ctrl + q      | quit the current file     |
-| Ctrl + n      | open nerd tree            |
-| Space + b + b | open telescope find files |
-| Space + p + p | open telescope git files  |
-| Space + p + e | open telescope buffers    |
-| Tab           | next buffer               |
-| Shift + Tab   | previous buffer           |
+| command         | Action                    |
+| --------------- | ------------------------- |
+| Ctrl + s        | save the file             |
+| Ctrl + q        | quit the current file     |
+| Ctrl + n        | open nerd tree            |
+| Space + b + b   | open telescope find files |
+| Space + p + p   | open telescope git files  |
+| Space + p + e   | open telescope buffers    |
+| Tab             | next buffer               |
+| Shift + Tab     | previous buffer           |
+| Alt + {h,j,k,l} | move in mode insert       |

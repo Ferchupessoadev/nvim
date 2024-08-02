@@ -11,6 +11,14 @@ local M = {
     },
     keys = {
         {
+
+            "<leader>pl",
+            function()
+                require("telescope.builtin").live_grep()
+            end,
+            desc = "Telescope live grep",
+        },
+        {
             "<leader>pp",
             function()
                 require("telescope.builtin").git_files({ show_untracked = true })

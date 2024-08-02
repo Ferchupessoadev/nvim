@@ -41,7 +41,6 @@ function M.setup()
         "arduino_language_server",
         "tsserver",
         "astro",
-        "intelephense",
         "phpactor",
         "emmet_language_server",
         "tailwindcss",

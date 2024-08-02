@@ -58,19 +58,13 @@ return {
                 },
                 lualine_y = {
                     {
-                        function()
-                            return "Debian"
-                        end,
+                        "filetype",
                         separator = { left = "" },
-                        icon = { " ", color = { fg = "#ff0033" } },
                     },
-                    "filetype",
                 },
                 lualine_z = { { "location", separator = { right = "" }, left_padding = 4 } },
             },
-            winbar = {
-                lualine_a = { "buffers" },
-            },
+            winbar = {},
         })
     end,
 }

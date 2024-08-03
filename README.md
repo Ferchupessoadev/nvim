@@ -39,7 +39,6 @@ nvim
   - [Luasnip](https://github.com/L3MON4D3/LuaSnip)
   - [Codeium](https://github.com/Exafunction/codeium.vim)
 
-- [Comment](https://github.com/numToStr/Comment.nvim)
 
 - ### Formatting and linting
 
@@ -57,6 +56,7 @@ nvim
   - [Toggleterm](https://github.com/akinsho/toggleterm.nvim)
   - [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
   - [mason](https://github.com/williamboman/mason.nvim)
+  - [Comment](https://github.com/numToStr/Comment.nvim)
 
 ## Commands
 

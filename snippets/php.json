@@ -1,0 +1,10 @@
+{
+    "initphp": {
+        "prefix": "php",
+        "body": [
+            "<?php",
+            ""
+        ],
+        "description": "Snippet for initializing a PHP file"
+    }
+}

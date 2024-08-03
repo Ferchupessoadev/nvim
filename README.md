@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![config de nvim](./img/neovim.png)
+![config de nvim](./.screenshot/nvim.png)
 
 # How to install
 

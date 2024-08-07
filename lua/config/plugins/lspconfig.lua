@@ -36,15 +36,16 @@ function M.setup()
 
     -- if you just want default config for the servers then put them in a table
     local servers = {
-        -- "html",
+        "pylsp",
         "lua_ls",
         "arduino_language_server",
         "tsserver",
         "astro",
-        "phpactor",
+        "intelephense",
         "emmet_language_server",
         "tailwindcss",
-        -- "clangd",
+        "dockerls",
+        "clangd",
     }
 
     for _, lsp in ipairs(servers) do
@@ -53,12 +54,19 @@ function M.setup()
         })
     end
 
+    lspconfig.phpactor.setup({
+        on_attach = on_attach,
+        cmd = { "phpactor", "language-server" },
+        filetypes = { "php" },
+        root_dir = lspconfig.util.root_pattern("composer.json", ".git"),
+    })
+
     lspconfig.tsserver.setup({
         filetypes = { "jsx", "js", "mjs" },
     })
 
     lspconfig.html.setup({
-        filetypes = { "html", "php", "js", "jsx", "tsx" },
+        filetypes = { "html", "js", "jsx", "tsx" },
     })
 
     lspconfig.emmet_language_server.setup({

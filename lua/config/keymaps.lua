@@ -48,9 +48,6 @@ vim.keymap.set("n", "<A-k>", "<C-w>5+", { desc = "Equal window" })
 vim.keymap.set("n", "<A-h>", "<C-w>5<", { desc = "Equal window" })
 vim.keymap.set("n", "<A-l>", "<C-w>6>", { desc = "Equal window" })
 
--- nvim-tree keymaps
-vim.keymap.set("n", "<C-n>", "<cmd>NvimTreeFindFileToggle <CR>", { desc = "Toggle NvimTree" })
-
 -- Map the 'y' key to execute :put
 vim.keymap.set("n", "<C-A-v>", ":put<CR>", { desc = "Map the 'y' key to execute :put" })
 

@@ -119,17 +119,12 @@ function M.config()
             selection_caret = " ",
             prompt_prefix = "   ",
             border = true,
-            borderchars = {
-                prompt = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
-                results = { "─", "│", "─", "│", "╭", "╮", "┤", "├" },
-                preview = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
-            },
             entry_prefix = "  ",
             multi_icon = "  ",
             sorting_strategy = "ascending",
-            hl_result_eol = false,
+            hl_result_eol = true,
             prompt_position = "top",
-            layout_strategy = "vertical",
+			layout_strategy = "vertical",
             layout_config = {
                 horizontal = {
                     prompt_position = "top",
@@ -138,11 +133,11 @@ function M.config()
                 },
                 vertical = {
                     prompt_position = "top",
-                    preview_height = 0.5,
-                    results_height = 0.5,
+                    preview_height = 0.4,
+                    results_height = 0.6,
                 },
                 width = 0.95,
-                height = 0.74,
+                height = 0.85,
             },
             mappings = {
                 i = {

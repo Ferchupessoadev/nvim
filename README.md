@@ -62,7 +62,6 @@ nvim
 | --------------- | ------------------------- |
 | Ctrl + s        | save the file             |
 | Ctrl + q        | quit the current file     |
-| Ctrl + n        | open nerd tree            |
 | Space + b + b   | open telescope find files |
 | Space + p + p   | open telescope git files  |
 | Space + p + e   | open telescope buffers    |

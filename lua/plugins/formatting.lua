@@ -1,17 +1,17 @@
 return {
     "stevearc/conform.nvim",
-    event = {},
+    event = { "BufReadPre", "BufNewFile" },
     config = function()
         local conform = require("conform")
 
         conform.setup({
             formatters_by_ft = {
-                astro = { "prettier" },
+                -- astro = { "prettier" },
                 php = { "php-cs-fixer" },
-                javascript = { "prettierd" },
-                typescript = { "prettierd" },
-                javascriptreact = { "prettier" },
-                typescriptreact = { "prettier" },
+                -- javascript = { "prettierd" },
+                -- typescript = { "prettierd" },
+                -- javascriptreact = { "prettier" },
+                -- typescriptreact = { "prettier" },
                 css = { "prettierd" },
                 html = { "prettierd" },
                 json = { "prettier" },

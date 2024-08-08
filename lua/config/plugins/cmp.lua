@@ -60,6 +60,7 @@ function M.setup()
                 if vim_item.kind == "Color" and entry.completion_item.documentation then
                     local _, _, r, g, b = string.find(entry.completion_item.documentation, "^rgb%((%d+), (%d+), (%d+)")
                     local color
+
                     -- The next conditional is for the new tailwindcss version.
                     if r and g and b then
                         color = string.format("%02x", r) .. string.format("%02x", g) .. string.format("%02x", b)
@@ -85,6 +86,32 @@ function M.setup()
     })
 
     cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done({ map_char = { tex = "" } }))
+
+    cmp.setup.filetype("gitcommit", {
+        sources = cmp.config.sources({
+            { name = "git" },
+        }, {
+            { name = "buffer" },
+        }),
+    })
+
+    -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
+    cmp.setup.cmdline({ "/", "?" }, {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = {
+            { name = "buffer" },
+        },
+    })
+
+    -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+    cmp.setup.cmdline(":", {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({
+            { name = "path" },
+        }, {
+            { name = "cmdline" },
+        }),
+    })
 end
 
 return M

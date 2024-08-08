@@ -13,6 +13,7 @@ return {
             "astro",
             "javascript",
             "typescript",
+            "query",
             "php",
             "tsx",
             "json",
@@ -23,7 +24,7 @@ return {
             "bash",
             "python",
             "sql",
-            -- "arduino",
+            "arduino",
             "cpp",
         },
         highlight = {

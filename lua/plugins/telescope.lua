@@ -89,7 +89,7 @@ local M = {
             desc = "Telescope Help",
         },
         {
-            "<leader>bb",
+            "<C-n>",
             function()
                 require("telescope").extensions.file_browser.file_browser({ path = "%:h:p", select_buffer = true })
             end,
@@ -124,7 +124,7 @@ function M.config()
             sorting_strategy = "ascending",
             hl_result_eol = true,
             prompt_position = "top",
-			layout_strategy = "vertical",
+            layout_strategy = "vertical",
             layout_config = {
                 horizontal = {
                     prompt_position = "top",

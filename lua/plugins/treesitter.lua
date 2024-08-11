@@ -10,6 +10,7 @@ return {
             "luadoc",
             "html",
             "css",
+            "scss",
             "astro",
             "javascript",
             "typescript",

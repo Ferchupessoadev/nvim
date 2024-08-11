@@ -1,3 +1,4 @@
+---@diagnostic disable: global-element-not-found
 local M = {}
 
 function M.setup()
@@ -38,10 +39,12 @@ function M.setup()
     local servers = {
         "pylsp",
         "lua_ls",
+        "sqls",
         "arduino_language_server",
         "tsserver",
         "astro",
-        "intelephense",
+        "phpactor",
+        -- "intelephense",
         "emmet_language_server",
         "tailwindcss",
         "dockerls",
@@ -56,17 +59,11 @@ function M.setup()
 
     lspconfig.phpactor.setup({
         on_attach = on_attach,
-        cmd = { "phpactor", "language-server" },
-        filetypes = { "php" },
-        root_dir = lspconfig.util.root_pattern("composer.json", ".git"),
+        root_dir = require("lspconfig.util").root_pattern("composer.json", ".git"),
     })
 
     lspconfig.tsserver.setup({
         filetypes = { "jsx", "js", "mjs" },
-    })
-
-    lspconfig.html.setup({
-        filetypes = { "html", "js", "jsx", "tsx" },
     })
 
     lspconfig.emmet_language_server.setup({

@@ -1,6 +1,6 @@
 --navegation in mode insert
-vim.keymap.set("i", "<A-h>", "<Left>", { desc = "move left" })
 vim.keymap.set("i", "<A-j>", "<Down>", { desc = "move down" })
+vim.keymap.set("i", "<A-h>", "<Left>", { desc = "move left" })
 vim.keymap.set("i", "<A-k>", "<Up>", { desc = "move up" })
 vim.keymap.set("i", "<A-l>", "<Right>", { desc = "move right" })
 
@@ -43,8 +43,8 @@ vim.keymap.set("n", "<S-tab>", "<cmd>bp<cr>", { desc = "Prev buffer" })
 
 -- redimencinar paneles
 vim.keymap.set("n", "<leader>=", "<C-w>=", { desc = "Equal window" })
-vim.keymap.set("n", "<A-j>", "<C-w>5-", { desc = "Equal window" })
-vim.keymap.set("n", "<A-k>", "<C-w>5+", { desc = "Equal window" })
+-- vim.keymap.set("n", "<A-j>", "<C-w>5-", { desc = "Equal window" })
+-- vim.keymap.set("n", "<A-k>", "<C-w>5+", { desc = "Equal window" })
 vim.keymap.set("n", "<A-h>", "<C-w>5<", { desc = "Equal window" })
 vim.keymap.set("n", "<A-l>", "<C-w>6>", { desc = "Equal window" })
 
@@ -62,3 +62,9 @@ vim.keymap.set("n", "<C-A-p>", "<cmd>set paste<CR>", { desc = "Mode paste on" })
 
 -- mode no paste
 vim.keymap.set("n", "<C-A-n>", "<cmd>set nopaste<CR>", { desc = "Mode paste off" })
+
+-- move lines
+vim.keymap.set("n", "<A-k>", "<cmd>m .-2<Return>==", { desc = "Move line up" })
+vim.keymap.set("n", "<A-j>", "<cmd>m .+1<Return>==", { desc = "Move line down" })
+vim.keymap.set("v", "<A-j>", ":m '>+1<Return>gv=gv", { desc = "Move line down" })
+vim.keymap.set("v", "<A-k>", ":m '<-2<Return>gv=gv", { desc = "Move line up" })

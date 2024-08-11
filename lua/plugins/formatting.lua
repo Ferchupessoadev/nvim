@@ -7,7 +7,7 @@ return {
         conform.setup({
             formatters_by_ft = {
                 -- astro = { "prettier" },
-                php = { "php-cs-fixer" },
+                php = { "pretty-php" },
                 -- javascript = { "prettierd" },
                 -- typescript = { "prettierd" },
                 -- javascriptreact = { "prettier" },
@@ -24,7 +24,7 @@ return {
             format_on_save = {
                 lsp_fallback = true,
                 async = false,
-                timeout_ms = 10000,
+                timeout_ms = 500,
             },
         })
 

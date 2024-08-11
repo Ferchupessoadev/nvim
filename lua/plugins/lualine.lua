@@ -35,7 +35,7 @@ return {
                         "mode",
                         separator = { left = "" },
                         right_padding = 2,
-                        icon = { "", color = { fg = "#FFFFFF" } },
+                        icon = { " ", color = { fg = "#11a331" } },
                         color = { fg = "#ffffff" },
                     },
                 },
@@ -55,25 +55,8 @@ return {
                 lualine_x = {
                     -- { "diagnostics" },
                     { "diff", symbols = { added = " ", modified = "󰝤 ", removed = " " } },
-                    { "encoding", separator = { left = "" } },
-                    {
-                        function()
-                            return "   "
-                        end,
-                    },
                 },
                 lualine_y = {
-                    {
-                        function()
-                            local time = os.date("%H:%M")
-
-                            return time
-                        end,
-                        icon = { "", color = { fg = "#cccccc" } },
-                        color = { fg = "#cccccc" },
-                        separator = { left = "" },
-                        right_padding = 2,
-                    },
                     {
                         "filetype",
                         separator = { left = "" },
@@ -81,7 +64,7 @@ return {
                 },
                 lualine_z = {
                     {
-                        "location",
+                        "progress",
                         separator = { right = "" },
                         left_padding = 4,
                     },

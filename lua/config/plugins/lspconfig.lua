@@ -1,4 +1,4 @@
----@diagnostic disable: global-element-not-found
+---@diagnostic disable: undefined-global
 local M = {}
 
 function M.setup()

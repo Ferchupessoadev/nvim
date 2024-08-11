@@ -1,3 +1,4 @@
+---@diagnostic disable-line: undefined-global
 local opt = vim.o
 local g = vim.g
 
@@ -7,6 +8,7 @@ g.mapleader = " " -- change leader to a comma o other letter
 -- neovim UI
 opt.number = true
 opt.relativenumber = true
+opt.cursorline = true
 opt.hidden = true
 opt.tabstop = 2
 opt.softtabstop = 2

@@ -39,7 +39,8 @@ function M.setup()
     local servers = {
         "pylsp",
         "lua_ls",
-        "sqls",
+        "bashls",
+        "sqlls",
         "arduino_language_server",
         "tsserver",
         "astro",

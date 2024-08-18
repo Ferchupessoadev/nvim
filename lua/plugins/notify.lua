@@ -7,7 +7,7 @@ return {
             background_colour = "#000000",
             render = "compact",
             stages = "static",
-            timeout = 1000,
+            timeout = 10000,
             fps = 10,
         })
         -- this overwrites the vim notify function

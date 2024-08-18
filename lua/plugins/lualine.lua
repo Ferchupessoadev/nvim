@@ -19,7 +19,6 @@ return {
                     "mason",
                     "telescope",
                     "alpha",
-                    "",
                     "TelescopePrompt",
                 },
                 refresh = {

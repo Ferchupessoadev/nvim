@@ -30,3 +30,9 @@ opt.splitright = true
 opt.autowrite = true
 opt.laststatus = 2
 opt.signcolumn = "yes"
+
+vim.filetype.add({
+    extension = {
+        ["http"] = "http",
+    },
+})

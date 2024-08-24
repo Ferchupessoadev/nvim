@@ -8,7 +8,7 @@ g.mapleader = " " -- change leader to a comma o other letter
 -- neovim UI
 opt.number = true
 opt.relativenumber = true
-opt.cursorline = true
+-- opt.cursorline = true
 opt.hidden = true
 opt.tabstop = 2
 opt.softtabstop = 2
@@ -31,8 +31,4 @@ opt.autowrite = true
 opt.laststatus = 2
 opt.signcolumn = "yes"
 
-vim.filetype.add({
-    extension = {
-        ["http"] = "http",
-    },
-})
+vim.cmd.colorscheme("vim")

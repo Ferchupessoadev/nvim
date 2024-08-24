@@ -7,7 +7,7 @@ return {
                 theme = "auto",
                 icons_enabled = true,
                 component_separtrueators = "",
-                transparent = true,
+                transparent = false,
                 section_separators = { left = "", right = "" },
                 globalstatus = true,
                 winbar_component_separators = { left = " ", right = " " },
@@ -35,7 +35,6 @@ return {
                         separator = { left = "" },
                         right_padding = 2,
                         icon = { " ", color = { fg = "#11a331" } },
-                        color = { fg = "#ffffff" },
                     },
                 },
                 lualine_b = {

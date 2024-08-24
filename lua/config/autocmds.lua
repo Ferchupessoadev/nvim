@@ -1,8 +1,3 @@
--- compile dwmblocks
-vim.cmd(
-    [[autocmd BufWritePost ~/.local/src/dwmblocks/config.h !cd ~/.local/src/dwmblocks/; sudo make install && { killall -q dwmblocks;setsid dwmblocks & ]]
-)
-
 vim.api.nvim_create_user_command("UploadArduino", function()
     -- Mostrar notificación inicial
     vim.notify("Compilando...", vim.log.levels.INFO, { timeout = 3000 })

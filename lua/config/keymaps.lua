@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 --navegation in mode insert
 vim.keymap.set("i", "<A-j>", "<Down>", { desc = "move down" })
 vim.keymap.set("i", "<A-h>", "<Left>", { desc = "move left" })

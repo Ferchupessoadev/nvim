@@ -1,4 +1,4 @@
----@diagnostic disable-line: undefined-global
+---@diagnostic disable: undefined-global
 local opt = vim.o
 local g = vim.g
 

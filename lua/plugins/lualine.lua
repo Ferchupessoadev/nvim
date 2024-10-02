@@ -8,7 +8,7 @@ return {
                 icons_enabled = true,
                 component_separtrueators = "",
                 transparent = false,
-                section_separators = { left = "", right = "" },
+                section_separators = { left = " ", right = " " },
                 globalstatus = true,
                 winbar_component_separators = { left = " ", right = " " },
                 disabled_filetypes = {
@@ -32,7 +32,6 @@ return {
                 lualine_a = {
                     {
                         "mode",
-                        separator = { left = "" },
                         right_padding = 2,
                         icon = { " ", color = { fg = "#11a331" } },
                     },
@@ -57,13 +56,11 @@ return {
                 lualine_y = {
                     {
                         "filetype",
-                        separator = { left = "" },
                     },
                 },
                 lualine_z = {
                     {
                         "progress",
-                        separator = { right = "" },
                         left_padding = 4,
                     },
                 },

@@ -42,8 +42,8 @@ function M.setup()
         "bashls",
         "sqlls",
         -- "ymlfmt",
-        "arduino_language_server",
-        "tsserver",
+        -- "arduino_language_server",
+        "ts_ls",
         "astro",
         "phpactor",
         "intelephense",
@@ -64,7 +64,8 @@ function M.setup()
         root_dir = require("lspconfig.util").root_pattern("composer.json", ".git"),
     })
 
-    lspconfig.tsserver.setup({
+    lspconfig.ts_ls.setup({
+        on_attach = on_attach,
         filetypes = { "jsx", "js", "mjs" },
     })
 

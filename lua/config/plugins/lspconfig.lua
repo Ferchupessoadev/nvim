@@ -89,6 +89,8 @@ function M.setup()
             "hbs",
             "handlebars",
             "php",
+            "blade",
+            "twig",
         },
     })
 end

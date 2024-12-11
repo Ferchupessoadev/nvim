@@ -46,7 +46,7 @@ function M.setup()
         "ts_ls",
         "astro",
         "phpactor",
-        "intelephense",
+        -- "intelephense",
         "emmet_language_server",
         "tailwindcss",
         "dockerls",

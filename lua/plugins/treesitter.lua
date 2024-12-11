@@ -60,7 +60,14 @@ return {
             ["@loop.inner"] = "V",
         },
     },
-    config = function(plug, config)
+    config = function(_, opts)
+        vim.filetype.add({
+            pattern = {
+                [".*%.blade%.php"] = "blade",
+            },
+        })
+
+        require("nvim-treesitter.configs").setup(opts)
         local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
         parser_config.blade = {
             install_info = {
@@ -70,13 +77,5 @@ return {
             },
             filetype = "blade",
         }
-
-        vim.filetype.add({
-            pattern = {
-                [".*%.blade%.php"] = "blade",
-            },
-        })
-
-        require(plug.main).setup(config)
     end,
 }

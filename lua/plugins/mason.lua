@@ -1,6 +1,6 @@
 return {
     "williamboman/mason.nvim",
-    dependencies = { "williamboman/mason-lspconfig.nvim" },
+    dependencies = { "williamboman/mason-lspconfig.nvim", "neovim/nvim-lspconfig" },
     config = function()
         require("mason").setup({
             ui = {
@@ -21,6 +21,22 @@ return {
                     cancel_installation = "<C-c>",
                 },
             },
+        })
+        require("mason-lspconfig").setup({
+            ensure_installed = require("config.servers").servers,
+            automatic_installation = true,
+        })
+
+        local lspconfig = require("lspconfig")
+        local lspconfig_config = require("config.lspconfig")
+
+        require("mason-lspconfig").setup_handlers({
+            function(server_name)
+                lspconfig[server_name].setup({
+                    on_attach = lspconfig_config.on_attach,
+                    capabilities = lspconfig_config.capabilities,
+                })
+            end,
         })
     end,
 }

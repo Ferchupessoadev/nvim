@@ -10,6 +10,7 @@ opt.number = true
 opt.relativenumber = true
 -- opt.cursorline = true
 opt.hidden = true
+opt.expandtab = true
 opt.tabstop = 2
 opt.softtabstop = 2
 opt.shiftwidth = 2
@@ -28,7 +29,5 @@ opt.clipboard = "unnamedplus"
 opt.splitbelow = true
 opt.splitright = true
 opt.autowrite = true
-opt.laststatus = 2
+opt.laststatus = 3
 opt.signcolumn = "yes"
-
-vim.cmd.colorscheme("vim")

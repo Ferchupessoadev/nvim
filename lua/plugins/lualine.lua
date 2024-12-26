@@ -21,11 +21,6 @@ return {
                     "alpha",
                     "TelescopePrompt",
                 },
-                refresh = {
-                    statusline = 1000,
-                    tabline = 1000,
-                    winbar = 1000,
-                },
             },
             extensions = { "quickfix", "fugitive" },
             sections = {
@@ -64,14 +59,6 @@ return {
                         left_padding = 4,
                     },
                 },
-            },
-            winbar = {
-                lualine_a = {},
-                lualine_b = {},
-                lualine_c = {},
-                lualine_x = {},
-                lualine_y = {},
-                lualine_z = {},
             },
         })
     end,

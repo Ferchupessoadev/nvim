@@ -37,6 +37,24 @@ return {
                     capabilities = lspconfig_config.capabilities,
                 })
             end,
+            ["emmet_language_server"] = function()
+                lspconfig.emmet_language_server.setup({
+                    on_attach = lspconfig_config.on_attach,
+                    capabilities = lspconfig_config.capabilities,
+                    filetypes = {
+                        "html",
+                        "typescriptreact",
+                        "javascriptreact",
+                        "css",
+                        "sass",
+                        "scss",
+                        "less",
+                        "blade",
+                        "php",
+                        "twig",
+                    },
+                })
+            end,
         })
     end,
 }

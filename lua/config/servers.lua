@@ -6,7 +6,7 @@ M.servers = {
     "bashls",
     "sqlls",
     -- "ymlfmt",
-    -- "arduino_language_server",
+    "arduino_language_server",
     "ts_ls",
     "astro",
     "phpactor",

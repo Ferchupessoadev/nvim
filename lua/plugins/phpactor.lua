@@ -9,9 +9,6 @@ return {
             "neovim/nvim-lspconfig",
         },
         opts = {
-            install = {
-                bin = vim.fn.stdpath("data") .. "/mason/bin/phpactor",
-            },
             lspconfig = {
                 enabled = true,
             },

@@ -7,6 +7,8 @@ return {
             astro = { rgb_fn = true },
             php = { rgb_fn = true },
             javascript = { rgb_fn = true },
+            blade = { rgb_fn = true },
+            typescript = { rgb_fn = true },
         })
     end,
 }

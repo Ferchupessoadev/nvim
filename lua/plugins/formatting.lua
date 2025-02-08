@@ -7,7 +7,7 @@ return {
         conform.setup({
             formatters_by_ft = {
                 -- astro = { "prettier" },
-                -- php = { "pretty-php" },
+                php = { "pretty-php" },
                 -- javascript = { "prettierd" },
                 -- typescript = { "prettierd" },
                 -- javascriptreact = { "prettier" },

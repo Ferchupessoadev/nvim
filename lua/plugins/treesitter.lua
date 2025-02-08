@@ -33,10 +33,9 @@ return {
         },
         highlight = {
             enable = true,
+            additional_vim_regex_highlighting = false,
         },
-        indent = {
-            enable = true,
-        },
+        indent = { enable = true },
         textobjects = {
             select = {
                 enable = true,
@@ -48,6 +47,8 @@ return {
                     ["ic"] = "@conditional.inner",
                     ["al"] = "@loop.outer",
                     ["il"] = "@loop.inner",
+                    ["ab"] = "@block.outer",
+                    ["ib"] = "@block.inner",
                 },
             },
         },
@@ -58,6 +59,8 @@ return {
             ["@conditional.inner"] = "V",
             ["@loop.outer"] = "V",
             ["@loop.inner"] = "V",
+            ["@block.outer"] = "V",
+            ["@block.inner"] = "V",
         },
     },
     config = function(_, opts)

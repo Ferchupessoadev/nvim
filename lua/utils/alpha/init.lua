@@ -4,6 +4,7 @@ local startify = require("alpha.themes.startify")
 startify.config.opts = {
     noautocmd = false,
     margin = 4,
+    padding = 2,
 }
 
 startify.section.header.val = {

@@ -16,4 +16,7 @@ require("lazy").setup({
         { import = "plugins" },
         -- { import = "plugins.themes" },
     },
+    dev = {
+        path = "/home/ferchodev/",
+    },
 }, nil)

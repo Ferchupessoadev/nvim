@@ -11,7 +11,13 @@ local M = {
     },
     keys = {
         {
-
+            "<leader>gf",
+            function()
+                require("telescope.builtin").grep_string()
+            end,
+            desc = "Telescope find files",
+        },
+        {
             "<leader>pl",
             function()
                 require("telescope.builtin").live_grep()
@@ -36,13 +42,6 @@ local M = {
             "<leader>gs",
             function()
                 require("telescope.builtin").git_status()
-            end,
-            desc = "Telescope Git status",
-        },
-        {
-            "<leader>gc",
-            function()
-                require("telescope.builtin").git_bcommits()
             end,
             desc = "Telescope Git status",
         },
@@ -109,6 +108,13 @@ local M = {
             end,
             desc = "Telescope keymaps",
         },
+        {
+            "<leader>gc",
+            function()
+                require("telescope.builtin").git_bcommits()
+            end,
+            desc = "Telescope git commits",
+        },
     },
 }
 function M.config()
@@ -124,20 +130,15 @@ function M.config()
             sorting_strategy = "ascending",
             hl_result_eol = true,
             prompt_position = "top",
-            layout_strategy = "vertical",
+            layout_strategy = "horizontal",
             layout_config = {
                 horizontal = {
-                    prompt_position = "top",
-                    preview_width = 0.4,
-                    results_width = 0.6,
+                    prompt_position = "bottom",
+                    preview_width = 0.5,
+                    results_width = 0.5,
                 },
-                vertical = {
-                    prompt_position = "top",
-                    preview_height = 0.4,
-                    results_height = 0.6,
-                },
-                width = 0.95,
-                height = 0.85,
+                width = 0.90,
+                height = 0.99,
             },
             mappings = {
                 i = {

@@ -1,10 +1,40 @@
 {
-    "initphp": {
-        "prefix": "php",
-        "body": [
-            "<?php",
-            ""
-        ],
-        "description": "Snippet for initializing a PHP file"
-    }
+  "initphp": {
+    "prefix": "php",
+    "body": [
+      "<?php",
+      ""
+    ],
+    "description": "Snippet for initializing a PHP file"
+  },
+  "initmethod": {
+    "prefix": "method",
+    "body": [
+      "public function $1($2)",
+      "{",
+      "  $3",
+      "}"
+    ],
+    "description": "Snippet for creating a public method"
+  },
+  "initfunction": {
+    "prefix": "function",
+    "body": [
+      "function $1($2)",
+      "{",
+      "  $3",
+      "}"
+    ],
+    "description": "Snippet for creating a function"
+  },
+  "initclass": {
+    "prefix": "class",
+    "body": [
+      "class $1",
+      "{",
+      "  $2",
+      "}"
+    ],
+    "description": "Snippet for creating a class"
+  }
 }

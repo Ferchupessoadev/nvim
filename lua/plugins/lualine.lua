@@ -34,7 +34,6 @@ return {
                 lualine_b = {
                     {
                         "branch",
-                        separator = { right = "" },
                         right_padding = 4,
                         icon = { "", color = { fg = "#ff4000" } },
                         color = { fg = "#ffffff" },

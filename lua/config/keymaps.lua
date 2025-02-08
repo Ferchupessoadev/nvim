@@ -5,13 +5,16 @@ vim.keymap.set("i", "<A-h>", "<Left>", { desc = "move left" })
 vim.keymap.set("i", "<A-k>", "<Up>", { desc = "move up" })
 vim.keymap.set("i", "<A-l>", "<Right>", { desc = "move right" })
 
+vim.keymap.set("i", "<A-e>", "<Esc>ea", { desc = "move right" })
+vim.keymap.set("i", "<A-b>", "<Esc>bi", { desc = "move left" })
+
 -- relaod config neovim
 vim.keymap.set("n", "<F6>", "<cmd>source ~/.config/nvim/init.lua<cr>", { desc = "Source the current file" })
 
 -- save and quit current file
 vim.keymap.set({ "n", "i", "s" }, "<C-s>", "<cmd>w<cr>", { desc = "save file" })
 vim.keymap.set("n", "<C-q>", ":q<cr>", { desc = "Quit file" })
-vim.keymap.set("n", "<A-S-q>", ":q!<cr>", { desc = "Quit file" })
+vim.keymap.set("n", "<A-S-q>", ":q!<cr>", { desc = "Quit file force" })
 -- clear highlight
 vim.keymap.set("n", "<ESC>", "<cmd>nohl<CR>", { desc = "Clear highlight" })
 
@@ -26,7 +29,7 @@ vim.keymap.set("t", "<C-x>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 vim.keymap.set("n", "<C-t>", ":ToggleTerm<cr>", { desc = "open new terminal" })
 
 -- load source config %
-vim.keymap.set("n", "<F7>", ":source %<cr>", { desc = "Reload config" })
+vim.keymap.set("n", "<F7>", "<cmd>source %<cr>", { desc = "Reload config" })
 
 -- toggle number
 vim.keymap.set("n", "<leader><leader>n", ":set relativenumber!<cr>", { desc = "Toggle line number" })
@@ -65,7 +68,7 @@ vim.keymap.set("n", "<C-A-p>", "<cmd>set paste<CR>", { desc = "Mode paste on" })
 vim.keymap.set("n", "<C-A-n>", "<cmd>set nopaste<CR>", { desc = "Mode paste off" })
 
 -- move lines
-vim.keymap.set("n", "<A-k>", "<cmd>m .-2<Return>==", { desc = "Move line up" })
 vim.keymap.set("n", "<A-j>", "<cmd>m .+1<Return>==", { desc = "Move line down" })
-vim.keymap.set("v", "<A-j>", ":m '>+1<Return>gv=gv", { desc = "Move line down" })
-vim.keymap.set("v", "<A-k>", ":m '<-2<Return>gv=gv", { desc = "Move line up" })
+vim.keymap.set("n", "<A-k>", "<cmd>m .-2<Return>==", { desc = "Move line up" })
+vim.keymap.set("v", "<A-j>", "<cmd>m '>+1<Return>gv=gv", { desc = "Move line down" })
+vim.keymap.set("v", "<A-k>", "<cmd>m '<-2<Return>gv=gv", { desc = "Move line up" })

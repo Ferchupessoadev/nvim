@@ -41,22 +41,28 @@ return {
                     "db_ui#statusline",
                 },
                 lualine_c = {
-                    { "filename", file_status = true, path = 1 },
+                    { "filename", file_status = true, path = 0 },
                 },
                 lualine_x = {
-                    -- { "diagnostics" },
+                    { "diagnostics", sources = { "nvim_diagnostic" } },
                     { "diff", symbols = { added = " ", modified = "󰝤 ", removed = " " } },
                 },
                 lualine_y = {
                     {
                         "filetype",
                     },
+                    {
+                        "encoding",
+                        left_padding = 2,
+                    },
+                    {
+                        "fileformat",
+                        left_padding = 2,
+                    },
                 },
                 lualine_z = {
-                    {
-                        "progress",
-                        left_padding = 4,
-                    },
+                    "progress",
+                    "location",
                 },
             },
         })

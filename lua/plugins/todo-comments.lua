@@ -1,6 +1,7 @@
 ---@diagnostic disable: undefined-global
 return {
     "folke/todo-comments.nvim",
+    event = "VeryLazy",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
     config = function()

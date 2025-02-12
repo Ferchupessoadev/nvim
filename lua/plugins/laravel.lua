@@ -15,6 +15,7 @@ return {
         { "<leader>lr", "<cmd>Laravel routes<cr>", desc = "Laravel routes" },
         { "<leader>lgf", "<cmd>Laravel gf<cr>", desc = "Laravel gf" },
     },
-    event = { "VeryLazy" },
+    event = "BufReadPost",
     opts = {},
+    config = true,
 }

@@ -1,12 +1,12 @@
 return {
-    "vague2k/vague.nvim",
+    "folke/tokyonight.nvim",
     lazy = false,
-    priority = 100,
+    priority = 1000,
     opts = {
-        style = "dark",
+        style = "night",
     },
     config = function(_, opts)
-        require("vague").setup(opts)
-        vim.cmd.colorscheme("vague")
+        require("tokyonight").setup(opts)
+        vim.cmd.colorscheme("tokyonight")
     end,
 }

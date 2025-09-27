@@ -7,10 +7,10 @@ return {
             options = {
                 theme = "auto",
                 icons_enabled = true,
-                component_separtrueators = "",
-                transparent = false,
-                section_separators = { left = " ", right = " " },
-                globalstatus = true,
+                transparent = true,
+                component_separators = { left = "", right = "" },
+                section_separators = { left = "", right = "" },
+                globalstatus = false,
                 winbar_component_separators = { left = " ", right = " " },
                 disabled_filetypes = {
                     "help",
@@ -29,7 +29,7 @@ return {
                     {
                         "mode",
                         right_padding = 2,
-                        icon = { " ", color = { fg = "#11a331" } },
+                        icon = { "  ", color = { fg = "#11a331" } },
                     },
                 },
                 lualine_b = {
@@ -46,7 +46,7 @@ return {
                 },
                 lualine_x = {
                     { "diagnostics", sources = { "nvim_diagnostic" } },
-                    { "diff", symbols = { added = " ", modified = "󰝤 ", removed = " " } },
+                    { "diff", symbols = { added = "  ", modified = " 󰝤 ", removed = "  " } },
                 },
                 lualine_y = {
                     {
@@ -56,14 +56,9 @@ return {
                         "encoding",
                         left_padding = 2,
                     },
-                    {
-                        "fileformat",
-                        left_padding = 2,
-                    },
                 },
                 lualine_z = {
-                    "progress",
-                    "location",
+                    {},
                 },
             },
         })

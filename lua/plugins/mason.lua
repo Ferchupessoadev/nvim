@@ -23,39 +23,10 @@ return {
                 },
             },
         })
+
         require("mason-lspconfig").setup({
             ensure_installed = require("config.servers").servers,
             automatic_installation = true,
-        })
-
-        local lspconfig = require("lspconfig")
-        local lspconfig_config = require("config.lspconfig")
-
-        require("mason-lspconfig").setup_handlers({
-            function(server_name)
-                lspconfig[server_name].setup({
-                    on_attach = lspconfig_config.on_attach,
-                    capabilities = lspconfig_config.capabilities,
-                })
-            end,
-            ["emmet_language_server"] = function()
-                lspconfig.emmet_language_server.setup({
-                    on_attach = lspconfig_config.on_attach,
-                    capabilities = lspconfig_config.capabilities,
-                    filetypes = {
-                        "html",
-                        "typescriptreact",
-                        "javascriptreact",
-                        "css",
-                        "sass",
-                        "scss",
-                        "less",
-                        "blade",
-                        "php",
-                        "twig",
-                    },
-                })
-            end,
         })
     end,
 }

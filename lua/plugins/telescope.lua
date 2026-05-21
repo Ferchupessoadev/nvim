@@ -109,7 +109,7 @@ local M = {
             desc = "Telescope keymaps",
         },
         {
-            "<leader>gc",
+            "<leader>gbc",
             function()
                 require("telescope.builtin").git_bcommits()
             end,

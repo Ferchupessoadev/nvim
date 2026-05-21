@@ -1,5 +1,5 @@
 return {
-    cmd = { "emmet-ls", "--stdio" },
+    cmd = { "emmet-language-server", "--stdio" },
     filetypes = {
         "html",
         "css",
@@ -8,5 +8,8 @@ return {
         "typescriptreact",
         "php",
         "blade",
+        "astro",
+        "twig",
     },
+    root_markers = { ".git", "package.json" },
 }

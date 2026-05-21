@@ -3,6 +3,8 @@ return {
     event = "VeryLazy",
     dependencies = { "rafamadriz/friendly-snippets" },
     version = "v2.*",
-    main = "config.plugins.luasnip",
-    config = true,
+    build = "make install_jsregexp",
+    config = function()
+        require("config.plugins.luasnip").setup()
+    end,
 }

@@ -30,6 +30,7 @@ return {
             "sql",
             "arduino",
             "cpp",
+            "prisma",
         },
         highlight = {
             enable = true,

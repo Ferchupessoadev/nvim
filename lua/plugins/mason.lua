@@ -1,7 +1,10 @@
+
 return {
     "williamboman/mason.nvim",
     event = "VeryLazy",
-    dependencies = { "williamboman/mason-lspconfig.nvim", "neovim/nvim-lspconfig" },
+    dependencies = {
+        "williamboman/mason-lspconfig.nvim",
+    },
     config = function()
         require("mason").setup({
             ui = {
@@ -25,8 +28,21 @@ return {
         })
 
         require("mason-lspconfig").setup({
-            ensure_installed = require("config.servers").servers,
-            automatic_installation = true,
+        	ensure_installed = {
+        		"ts_ls",
+        		"lua_ls",
+        		"tailwindcss",
+        		"html",
+        		"cssls",
+        		"basedpyright",
+        		"bashls",
+        		"dockerls",
+        		"jsonls",
+        		"nginx_language_server",
+        		"yamlls",
+        	},
+        	-- Automatically calls vim.lsp.enable() on installed servers (Neovim 0.11+)
+        	automatic_enable = true,
         })
     end,
 }

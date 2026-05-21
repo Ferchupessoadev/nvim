@@ -5,12 +5,12 @@ return {
 
         conform.setup({
             formatters_by_ft = {
-                -- astro = { "prettier" },
-                php = { "pretty-php" },
-                -- javascript = { "prettierd" },
-                -- typescript = { "prettierd" },
-                -- javascriptreact = { "prettier" },
-                -- typescriptreact = { "prettier" },
+                astro = { "prettierd" },
+                -- php = { "pretty-php" },
+                javascript = { "prettierd" },
+                typescript = { "prettierd" },
+                javascriptreact = { "prettier" },
+                typescriptreact = { "prettier" },
                 css = { "prettierd" },
                 html = { "prettierd" },
                 json = { "prettier" },
@@ -19,14 +19,6 @@ return {
                 lua = { "stylua" },
                 python = { "isort", "black" },
                 arduino = { "clangd" },
-            },
-            format_on_save = {
-                lsp_fallback = true,
-                async = false,
-                timeout_ms = 1000,
-            },
-            format_after_save = {
-                lsp_format = "fallback",
             },
         })
 
